@@ -1,0 +1,51 @@
+{
+	"name": "@somehow-digital/commitlint-config",
+	"description": "Shared `commitlint` configurations for `somehow.digital` projects.",
+	"version": "0.0.0",
+	"type": "module",
+	"license": "MIT",
+	"repository": "somehow-digital/commitlint-config",
+	"packageManager": "pnpm@9.11.0",
+	"engines": {
+		"node": ">=20",
+		"pnpm": ">=9"
+	},
+	"scripts": {
+		"prepare": "husky",
+		"lint": "concurrently --group --prefix-colors 'auto' 'pnpm:lint:*'",
+		"lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
+		"lint:prettier": "prettier --check '**/*.{md,json,yml,yaml}'",
+		"lint:cspell": "cspell --no-progress --no-summary --no-must-find-files '**/*.*'",
+		"lint:knip": "knip --no-progress",
+		"fix": "concurrently --group --prefix-colors 'auto' 'pnpm:fix:*'",
+		"fix:eslint": "eslint --fix '**/*.{js,jsx,ts,tsx}'",
+		"fix:prettier": "prettier --write '**/*.{md,json,yml,yaml}'",
+		"fix:knip": "knip --no-progress --fix"
+	},
+	"exports": {
+		".": "./configuration/basic.js",
+		"./basic": "./configuration/basic.js"
+	},
+	"files": [
+		"./configuration/"
+	],
+	"peerDependencies": {
+		"@commitlint/cli": "^19.5.0"
+	},
+	"dependencies": {
+		"@somehow-digital/commitlint-plugin-spellcheck": "^1.0.1"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.5.0",
+		"@somehow-digital/cspell-dictionary": "^1.0.0",
+		"@somehow-digital/eslint-config": "^2.0.0",
+		"@somehow-digital/prettier-config": "^2.0.0",
+		"concurrently": "^9.0.1",
+		"cspell": "^8.14.4",
+		"eslint": "^9.11.1",
+		"husky": "^9.1.6",
+		"knip": "^5.30.5",
+		"lint-staged": "^15.2.10",
+		"prettier": "3.3.3"
+	}
+}
