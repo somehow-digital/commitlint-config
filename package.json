@@ -24,7 +24,8 @@
 	},
 	"exports": {
 		".": "./configuration/basic.js",
-		"./basic": "./configuration/basic.js"
+		"./basic": "./configuration/basic.js",
+		"./conventional": "./configuration/conventional.js"
 	},
 	"files": [
 		"./configuration/"
@@ -33,6 +34,7 @@
 		"@commitlint/cli": "^19.5.0"
 	},
 	"dependencies": {
+		"@commitlint/config-conventional": "^19.6.0",
 		"@somehow-digital/commitlint-plugin-spellcheck": "^1.0.1"
 	},
 	"devDependencies": {
