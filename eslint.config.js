@@ -1,8 +1,3 @@
 import config from '@somehow-digital/eslint-config';
 
-export default [
-	...config,
-	{
-		ignores: ['**/.*/'],
-	},
-];
+export default config();
