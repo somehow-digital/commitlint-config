@@ -1,27 +1,11 @@
 {
 	"name": "@somehow-digital/commitlint-config",
-	"description": "Shared `commitlint` configurations for `somehow.digital` projects.",
-	"version": "1.1.0",
 	"type": "module",
+	"version": "1.1.0",
+	"packageManager": "pnpm@10.13.1",
+	"description": "Shared `commitlint` configurations for `somehow.digital` projects.",
 	"license": "MIT",
 	"repository": "somehow-digital/commitlint-config",
-	"packageManager": "pnpm@10.13.1",
-	"engines": {
-		"node": ">=22",
-		"pnpm": ">=10"
-	},
-	"scripts": {
-		"prepare": "husky",
-		"lint": "concurrently --group --prefix-colors 'auto' 'pnpm:lint:*'",
-		"lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
-		"lint:prettier": "prettier --check '**/*.{md,json,yml,yaml}'",
-		"lint:cspell": "cspell --no-progress --no-summary --no-must-find-files '**/*.*'",
-		"lint:knip": "knip --no-progress",
-		"fix": "concurrently --group --prefix-colors 'auto' 'pnpm:fix:*'",
-		"fix:eslint": "eslint --fix '**/*.{js,jsx,ts,tsx}'",
-		"fix:prettier": "prettier --write '**/*.{md,json,yml,yaml}'",
-		"fix:knip": "knip --no-progress --fix"
-	},
 	"exports": {
 		".": "./configuration/basic.js",
 		"./basic": "./configuration/basic.js",
@@ -30,6 +14,20 @@
 	"files": [
 		"./configuration/"
 	],
+	"engines": {
+		"node": ">=22",
+		"pnpm": ">=10"
+	},
+	"scripts": {
+		"prepare": "husky",
+		"lint": "concurrently --group --prefix-colors 'auto' 'pnpm:lint:*'",
+		"lint:eslint": "eslint .",
+		"lint:cspell": "cspell --no-progress --no-summary --no-must-find-files '**/*.*'",
+		"lint:knip": "knip --no-progress",
+		"fix": "concurrently --group --prefix-colors 'auto' 'pnpm:fix:*'",
+		"fix:eslint": "eslint --fix .",
+		"fix:knip": "knip --no-progress --fix"
+	},
 	"peerDependencies": {
 		"@commitlint/cli": "^19.5.0"
 	},
@@ -40,8 +38,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^19.5.0",
 		"@somehow-digital/cspell-dictionary": "^2.0.0",
-		"@somehow-digital/eslint-config": "^3.0.0",
-		"@somehow-digital/prettier-config": "^3.0.0",
+		"@somehow-digital/eslint-config": "^4.0.0",
 		"@somehow-digital/semantic-release-config": "^2.0.0",
 		"concurrently": "^9.0.1",
 		"cspell": "^9.0.0",
@@ -49,7 +46,11 @@
 		"husky": "^9.1.6",
 		"knip": "^5.30.5",
 		"lint-staged": "^16.0.0",
-		"prettier": "3.6.2",
 		"semantic-release": "^24.2.0"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"oxc-resolver"
+		]
 	}
 }

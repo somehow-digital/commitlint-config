@@ -14,6 +14,6 @@ pnpm add -D @somehow-digital/commitlint-config
 
 ```js
 export default {
-  extends: ['@somehow-digital/commitlint-config'],
+	extends: ['@somehow-digital/commitlint-config'],
 };
 ```
