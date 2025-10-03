@@ -29,7 +29,7 @@
 		"fix:knip": "knip --no-progress --fix"
 	},
 	"peerDependencies": {
-		"@commitlint/cli": "^19.5.0"
+		"@commitlint/cli": "^19.5.0 || ^20.0.0"
 	},
 	"dependencies": {
 		"@commitlint/config-conventional": "^20.0.0",
