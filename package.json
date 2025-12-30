@@ -2,7 +2,7 @@
 	"name": "@somehow-digital/commitlint-config",
 	"type": "module",
 	"version": "1.1.0",
-	"packageManager": "pnpm@10.26.2",
+	"packageManager": "pnpm@10.27.0",
 	"description": "Shared `commitlint` configurations for `somehow.digital` projects.",
 	"license": "MIT",
 	"repository": "somehow-digital/commitlint-config",
