@@ -41,7 +41,7 @@ importers:
         version: 9.1.7
       knip:
         specifier: ^6.0.0
-        version: 6.0.3
+        version: 6.0.4
       lint-staged:
         specifier: ^16.0.0
         version: 16.4.0
@@ -2544,8 +2544,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  knip@6.0.3:
-    resolution: {integrity: sha512-6Ai+Iv41dVpBYH6mReFejhniWq4eiaKrBw4kghqz2Ew5psQMYEqYxJtXLdj/7vRJ3nVaHpakhYUCKO8p3ftNsQ==}
+  knip@6.0.4:
+    resolution: {integrity: sha512-r/9F7wcxiFM71WgDFQiToE2hQHwZ/UkGmr74o8eiNFPIg80f7rlQHVrZiRX46Tj2yE3s96wUVNGMnsDMylgInw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -3317,8 +3317,8 @@ packages:
     resolution: {integrity: sha512-stxByr12oeeOyY2BlviTNQlYV5xOj47GirPr4yA1hE9JCtxfQN0+tVbkxwCtYDQWhEKWFHsEK48ORg5jrouCAg==}
     engines: {node: '>=20'}
 
-  smol-toml@1.6.0:
-    resolution: {integrity: sha512-4zemZi0HvTnYwLfrpk/CF9LOd9Lt87kAt50GnqhMpyF9U3poDAP2+iukq2bZsO/ufegbYehBkqINbsWxj4l4cw==}
+  smol-toml@1.6.1:
+    resolution: {integrity: sha512-dWUG8F5sIIARXih1DTaQAX4SsiTXhInKf1buxdY9DIg4ZYPZK5nGM1VRIYmEbDbsHt7USo99xSLFu5Q1IqTmsg==}
     engines: {node: '>= 18'}
 
   source-map-js@1.2.1:
@@ -5438,7 +5438,7 @@ snapshots:
     dependencies:
       '@cspell/cspell-types': 9.7.0
       comment-json: 4.6.2
-      smol-toml: 1.6.0
+      smol-toml: 1.6.1
       yaml: 2.8.3
 
   cspell-dictionary@9.7.0:
@@ -6433,7 +6433,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  knip@6.0.3:
+  knip@6.0.4:
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       fast-glob: 3.3.3
@@ -6445,7 +6445,7 @@ snapshots:
       oxc-resolver: 11.19.1
       picocolors: 1.1.1
       picomatch: 4.0.3
-      smol-toml: 1.6.0
+      smol-toml: 1.6.1
       strip-json-comments: 5.0.3
       unbash: 2.2.0
       yaml: 2.8.3
@@ -7394,7 +7394,7 @@ snapshots:
       ansi-styles: 6.2.3
       is-fullwidth-code-point: 5.1.0
 
-  smol-toml@1.6.0: {}
+  smol-toml@1.6.1: {}
 
   source-map-js@1.2.1: {}
 
