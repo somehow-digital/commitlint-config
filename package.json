@@ -2,7 +2,7 @@
 	"name": "@somehow-digital/commitlint-config",
 	"type": "module",
 	"version": "1.1.0",
-	"packageManager": "pnpm@10.34.1",
+	"packageManager": "pnpm@11.5.2",
 	"description": "Shared `commitlint` configurations for `somehow.digital` projects.",
 	"license": "MIT",
 	"repository": "somehow-digital/commitlint-config",
@@ -47,10 +47,5 @@
 		"knip": "^6.0.0",
 		"lint-staged": "^17.0.0",
 		"semantic-release": "^25.0.0"
-	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"oxc-resolver"
-		]
 	}
 }
